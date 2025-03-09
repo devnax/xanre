@@ -20,7 +20,7 @@
     "jsx": "react"
   },
   "include": [
-    null
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"

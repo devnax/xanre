@@ -7,12 +7,19 @@ class XanreqServer {
       console.log('XanReqServer')
    }
 
-   async get(path, handler) {
+   async get(path: string, handler: Function) {
 
    }
 
    async listen(path: string, method: HTTPMethods, body: RequestBody) {
       console.log(path, method, body);
+
+      return {
+         message: 'Hello World',
+         data: "",
+         status: 500,
+         errors: []
+      }
    }
 }
 
